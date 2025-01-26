@@ -1,4 +1,5 @@
-# CP SOURCE CODE
+# Simulate UNIX commands like cp, ls, grep, etc
+# Cp simulate command Source code
 ```c
 #include <stdio.h>
 #include <stdlib.h>
