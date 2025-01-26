@@ -43,6 +43,78 @@ general commands
   To display the commands used by the user since log on.
   exit
   Exit from a process. If shell is the only process then logs out
+  # dirctory commands
+  pwd
+Path of the present working directory
+mkdir dir
+A directory is created in the given name under the current directory
+mkdir dir1 dir2
+A number of sub-directories can be created under one stroke
+cd subdir
+Change Directory. If the subdir starts with / then path starts from root (absolute)
+otherwise from current working directory.
+Cd
+To switch to the home directory.
+cd /
+To switch to the root directory.
+cd ..
+To move back to the parent directory
+rmdir subdir
+Removes an empty sub-directory.
+#file commands
+cat >filename
+To create a file with some contents.
+To end typing press
+Ctrl+d.
+The >symbol means redirecting output to a file. (<for input)
+cat filename
+Displays the file contents.
+cat >>filename
+Used to append contents to a file
+cp src des
+Copy files to given location. If already exists, it will be overwritten
+cp –i src des
+Warns the user prior to overwriting the destination file
+cp –r src des
+Copies the entire directory, all its sub-directories and files.
+mv old new
+To rename an existing file or directory. –i option can also be used
+mv f1 f2 f3 dir
+To move a group of files to a directory.
+mv –v old new Di
+Display name of each file as it is moved.
+rm file
+Used to delete a file or group of files. –i option can also be used
+rm *
+To delete all the files in the directory.
+rm –r *
+Deletes all files and sub-directories
+rm –f *
+To forcibly remove even write-protected files
+ls
+Lists all files and subdirectories (blue colored) in sorted Order
+ls name
+To check whether a file or directory exists.
+ls name *
+Short-hand notation to list out filenames of a specific pattern.
+ls –a
+Lists all files including hidden files (files beginning with .)
+ls –x dirname
+To have specific listing of a directory.
+ls –R
+Recursive listing of all files in the subdirectories
+ls –l
+Long listing showing file access rights (read/write/execute-rwx for user/group/others-
+ugo).
+cmp file1 file2
+Used to compare two files. Displays nothing if files are identical.
+Wc file It produces a statistics of lines (l), words(w), and characters(c).
+chmod perm file
+Changes permission for the specified file. (r=4, w=2, x=1)
+chmod 740 file
+sets all rights for user, read only for groups and no rights for others
+#RESULT
+<h2>Thus the study and execution of Unix commands has been completed successfully.</h2>
   
 # Simulate UNIX commands like cp, ls, grep, etc
 # Cp simulate command Source code
