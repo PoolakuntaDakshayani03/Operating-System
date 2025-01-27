@@ -1,6 +1,7 @@
 #Exp1: basics of unix commands
 general commands
-  date
+  ```c
+date
   Used to display the current system date and time.
   date +%D
   Displays date only
@@ -43,8 +44,10 @@ general commands
   To display the commands used by the user since log on.
   exit
   Exit from a process. If shell is the only process then logs out
+```
   # dirctory commands
-  pwd
+  ```c
+pwd
 Path of the present working directory
 mkdir dir
 A directory is created in the given name under the current directory
@@ -61,7 +64,9 @@ cd ..
 To move back to the parent directory
 rmdir subdir
 Removes an empty sub-directory.
+```
 #file commands
+```c
 cat >filename
 To create a file with some contents.
 To end typing press
@@ -113,6 +118,7 @@ chmod perm file
 Changes permission for the specified file. (r=4, w=2, x=1)
 chmod 740 file
 sets all rights for user, read only for groups and no rights for others
+```
 #RESULT
 <h2>Thus the study and execution of Unix commands has been completed successfully.</h2>
   
